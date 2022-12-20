@@ -5,7 +5,7 @@ Installation:
 -------------
 git clone https://github.com/EnricoRiccardi/core_back_bone.git
 
-cd pyeli
+cd core_back_bone
 
 pip install . 
 
