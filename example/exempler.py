@@ -16,4 +16,4 @@ source_zip = 'testfiles.zip'
 with zipfile.ZipFile(source_zip) as zipped:
     zipped.extractall(path=os.path.dirname(os.path.abspath(source_zip)))
 
-pyeli_main('test.json')
+pydec_main('test.json')

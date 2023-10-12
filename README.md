@@ -21,7 +21,7 @@ Run unit tests (requires pytest):
 
 cd tests
 
-pytest --cov=../pydec *py
+pytest --cov=pydec *py
 
 
 
@@ -30,8 +30,7 @@ Test code style quality (requires pylint and pycodestyle):
 
 pylint pydec tests example
 
-pycodestyle */*/*py
-
+pycodestyle */*.py
 
 
 Run example:
