@@ -6,10 +6,10 @@
 #
 # "python exempler.py"
 #
-# thus using PyEli as a library.
+# thus using PyDec as a library.
 #
 
 unzip testfiles.zip
-pyeli -i test.json
+pydec -i test.json
 
 rm *.f *.s

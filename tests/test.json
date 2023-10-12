@@ -1,7 +1,0 @@
-{"Input": {"file_segments": ["testfile_a.s", "testfile_b.s"], 
-	   "file_functions": ["testfile_a.f", "testfile_b.f"]},
- "Main": {"tasks": ["local_mean"],
-	  "idx_tasks": [[0, 1]],
-	  "cross_tasks": ["overlap", "person"],
-	  "idx_cross_tasks": [[[0, 1]], [[0, 1]]]}
-}

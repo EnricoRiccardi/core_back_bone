@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2022, Enrico Development Team.
+# Copyright (c) 2023, Enrico Development Team.
 # Distributed under the LGPLv2.1+ License.
 """
 Test program structure.
@@ -8,9 +8,9 @@ Test program structure.
 import unittest
 from io import StringIO
 from unittest.mock import patch
-from pyeli.core.runner import Geni
-from pyeli.core.main import pyeli_main
-from pyeli.bin.pyelirun import hello_world, bye_world
+from pydec.core.runner import Geni
+from pydec.core.main import pydec_main
+from pydec.bin.pydecrun import hello_world, bye_world
 
 
 class StructureTesting(unittest.TestCase):
@@ -40,13 +40,13 @@ class StructureTesting(unittest.TestCase):
             general.cheers()
         self.assertIn('D-O-N-E', stdout.getvalue().strip())
 
-    def test_pyeli_main(self):
+    def test_pydec_main(self):
         """
         Test main function.
 
         """
         with patch('sys.stdout', new=StringIO()) as stdout:
-            pyeli_main(input_file='test.json')
+            pydec_main(input_file='test_files/test.json')
         self.assertIn('D-O-N-E', stdout.getvalue().strip())
 
     def test_polite_functions(self):
@@ -56,7 +56,7 @@ class StructureTesting(unittest.TestCase):
         """
         with patch('sys.stdout', new=StringIO()) as stdout:
             hello_world()
-        self.assertIn('xir', stdout.getvalue().strip())
+        self.assertIn('ision', stdout.getvalue().strip())
         with patch('sys.stdout', new=StringIO()) as stdout:
             bye_world()
         self.assertIn('execution', stdout.getvalue().strip())

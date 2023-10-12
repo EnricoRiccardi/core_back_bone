@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2022, Enrico Development Team.
+# Copyright (c) 2023, Enrico Development Team.
 # Distributed under the LGPLv2.1+ License.
 from codecs import open as openc
 import pathlib
@@ -19,11 +19,11 @@ def get_requirements():
 
 
 setup(
-    name='pyeli',
+    name='pydec',
     version='0.0.9.dev0',
-    description='A simulation package for getting hired at Elixir',
+    description='A simulation package for working together',
     author='Enrico Riccardi',
-    author_email='enricori@uio.no',
+    author_email='enrico.riccardi@uis.no',
     license='LGPLv2.1+',
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -33,15 +33,15 @@ setup(
          'GNU Lesser General Public License v2 or later (LGPLv2+)'),
         'Natural Language :: English',
         'Operating System :: POSIX',
-        'Programming Language :: Python :: 3.8',
-        'Topic :: Scientific/Engineering :: Bioinformatics',
+        'Programming Language :: Python :: 3.9',
+        'Topic :: Scientific/Engineering :: Decision Analysis',
     ],
-    keywords='elixir interview uio',
+    keywords='Decisions in Python',
     packages=find_namespace_packages(),
     install_requires=get_requirements(),
     entry_points={
         'console_scripts': [
-            'pyeli = pyeli.bin.pyelirun:entry_point',
+            'pydec = pydec.bin.pydecrun:entry_point',
         ]
     },
 )

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2022, Enrico Development Team.
+# Copyright (c) 2023, Enrico Development Team.
 # Distributed under the LGPLv2.1+ License.
 """
 Test program operational functions for single and cross segments or functions.
@@ -7,9 +7,9 @@ Test program operational functions for single and cross segments or functions.
 """
 import unittest
 import numpy as np
-from pyeli.inout.inout import read_data_file
-from pyeli.tools.tools import check_segment_consistency, local_mean
-from pyeli.tools.cross_tools import segment_overlap, person, vanilla_person
+from pydec.inout.inout import read_data_file
+from pydec.tools.tools import check_segment_consistency, local_mean
+from pydec.tools.cross_tools import segment_overlap, person, vanilla_person
 
 
 class ToolsTesting(unittest.TestCase):
@@ -22,8 +22,8 @@ class ToolsTesting(unittest.TestCase):
         Test read segment consistency.
 
         """
-        source_file_not_ok = 'segment_not_ok.s'
-        source_file_ok = 'segment_ok.s'
+        source_file_not_ok = 'test_files/segment_not_ok.s'
+        source_file_ok = 'test_files/segment_ok.s'
         read_not_ok = read_data_file(source_file_not_ok)
         read_ok = read_data_file(source_file_ok)
 
