@@ -1,5 +1,5 @@
-PyEli, a sample code
---------------------
+PyCODE, a sample code structure
+-------------------------------
 
 Installation:
 -------------
