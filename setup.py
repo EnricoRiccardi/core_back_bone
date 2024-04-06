@@ -21,14 +21,14 @@ def get_requirements():
 setup(
     name='pydec',
     version='0.0.9.dev0',
-    description='A simulation package for working together',
+    description='A basic simulation package',
     author='Enrico Riccardi',
     author_email='enrico.riccardi@uis.no',
     license='LGPLv2.1+',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
-        'Intended Audience :: Science/Research',
+        'Intended Audience :: Python Programming Students',
         ('License :: OSI Approved :: '
          'GNU Lesser General Public License v2 or later (LGPLv2+)'),
         'Natural Language :: English',
